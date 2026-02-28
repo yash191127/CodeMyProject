@@ -1,89 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeMyProject | College Project Services</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    <!-- HERO SECTION -->
-    <header class="hero">
-        <h1>CodeMyProject</h1>
-        <p>Affordable College Website, Mini & Arduino Projects with Full Explanation</p>
-        <a href="#contact" class="btn">Contact on WhatsApp</a>
-    </header>
+body {
+    background-color: #f4f6fb;
+    color: #333;
+    line-height: 1.6;
+}
 
-    <!-- ABOUT -->
-    <section class="section">
-        <h2>About CodeMyProject</h2>
-        <p>
-            CodeMyProject is a student-focused service where I help college students
-            with website projects, mini projects, and Arduino projects for academic purposes.
-            All projects include complete source code, explanation, and viva support.
-        </p>
-    </section>
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #1f3cff, #4e6cff);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
 
-    <!-- SERVICES -->
-    <section class="section services">
-        <h2>My Services</h2>
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
 
-        <div class="card">
-            <h3>Website Projects</h3>
-            <p>HTML, CSS, JavaScript & React projects for college submission.</p>
-            <span>Starting from ₹1,999</span>
-        </div>
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
 
-        <div class="card">
-            <h3>Mini Projects</h3>
-            <p>CSE mini projects with source code and full explanation.</p>
-            <span>Starting from ₹2,499</span>
-        </div>
+/* BUTTON */
+.btn {
+    background: white;
+    color: #1f3cff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
 
-        <div class="card">
-            <h3>Arduino Projects</h3>
-            <p>Arduino & IoT projects with circuit diagram and demo explanation.</p>
-            <span>Starting from ₹3,999</span>
-        </div>
-    </section>
+/* SECTIONS */
+.section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
 
-    <!-- WHY CHOOSE -->
-    <section class="section why">
-        <h2>Why Choose CodeMyProject?</h2>
-        <ul>
-            <li>✔ Affordable pricing for students</li>
-            <li>✔ Complete source code provided</li>
-            <li>✔ Project explanation for viva & practical exams</li>
-            <li>✔ On-time delivery</li>
-            <li>✔ Friendly student support</li>
-        </ul>
-    </section>
+.section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1f3cff;
+}
 
-    <!-- HOW IT WORKS -->
-    <section class="section">
-        <h2>How It Works</h2>
-        <ol class="steps">
-            <li>Contact me on WhatsApp</li>
-            <li>Share your project requirements</li>
-            <li>Get project with explanation</li>
-        </ol>
-    </section>
+/* SERVICES */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
 
-    <!-- CONTACT -->
-    <section class="section contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Quick response on WhatsApp</p>
-        <a href="https://wa.me/91YOURNUMBER?text=Hi%20I%20need%20a%20college%20project" class="btn">
-            WhatsApp Me
-        </a>
-        <p>Email: codemyproject@gmail.com</p>
-    </section>
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 CodeMyProject | Built for Students</p>
-    </footer>
+.card h3 {
+    margin-bottom: 10px;
+}
 
-</body>
-</html>
+.card span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1f3cff;
+}
+
+/* WHY SECTION */
+.why ul {
+    list-style: none;
+    max-width: 600px;
+    margin: auto;
+}
+
+.why li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* STEPS */
+.steps {
+    max-width: 500px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.steps li {
+    margin: 10px 0;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+}
